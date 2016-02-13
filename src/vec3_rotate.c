@@ -6,13 +6,13 @@
 /*   By: scollon <scollon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 13:35:38 by scollon           #+#    #+#             */
-/*   Updated: 2016/02/08 14:21:54 by scollon          ###   ########.fr       */
+/*   Updated: 2016/02/09 16:30:37 by scollon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvect.h"
 
-void	vec3_rotate(t_vect3d *v, float theta, int axis)
+void	vec3_rotate(t_vect3d *v, double theta, int axis)
 {
 	t_vect3d	t;
 

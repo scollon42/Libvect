@@ -6,13 +6,13 @@
 /*   By: scollon <scollon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 13:06:39 by scollon           #+#    #+#             */
-/*   Updated: 2016/02/08 13:19:20 by scollon          ###   ########.fr       */
+/*   Updated: 2016/02/09 16:30:09 by scollon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvect.h"
 
-float	vec3_dot_product(t_vect3d v3a, t_vect3d v3b)
+double	vec3_dot_product(t_vect3d v3a, t_vect3d v3b)
 {
-	return ((v3a.x * v3b.x) + (v3a.y * v3b.y) + (v3a.z * v3b.z));
+	return ((v3a.x * v3b.x + v3a.y * v3b.y + v3a.z * v3b.z));
 }

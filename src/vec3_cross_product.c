@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vec3_magnitude.c                                   :+:      :+:    :+:   */
+/*   vec3_cross_product.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scollon <scollon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/02/08 12:46:14 by scollon           #+#    #+#             */
-/*   Updated: 2016/02/09 16:29:57 by scollon          ###   ########.fr       */
+/*   Created: 2016/02/09 08:57:17 by scollon           #+#    #+#             */
+/*   Updated: 2016/02/10 12:02:56 by scollon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvect.h"
 
-double	vec3_magnitude(t_vect3d v3)
+t_vect3d	vec3_cross_product(const t_vect3d a, const t_vect3d b)
 {
-	return (sqrt((v3.x * v3.x) + (v3.y * v3.y) + (v3.z * v3.z)));
+	t_vect3d	r;
+	r.x = a.y * b.z - b.y * a.z;
+	r.y = a.z * b.x - b.z * a.x;
+	r.z = a.x * b.y - b.x * a.y;
+	return (r);
 }

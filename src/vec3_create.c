@@ -6,13 +6,13 @@
 /*   By: scollon <scollon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 12:28:53 by scollon           #+#    #+#             */
-/*   Updated: 2016/02/08 13:29:22 by scollon          ###   ########.fr       */
+/*   Updated: 2016/02/09 16:29:12 by scollon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvect.h"
 
-t_vect3d	vec3_create(const float x, const float y, const float z)
+t_vect3d	vec3_create(const double x, const double y, const double z)
 {
 	t_vect3d	r;
 

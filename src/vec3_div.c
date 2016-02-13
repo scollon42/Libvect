@@ -6,13 +6,13 @@
 /*   By: scollon <scollon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/08 12:43:46 by scollon           #+#    #+#             */
-/*   Updated: 2016/02/08 13:18:02 by scollon          ###   ########.fr       */
+/*   Updated: 2016/02/09 16:29:41 by scollon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libvect.h"
 
-t_vect3d	vec3d_div(const t_vect3d v3a, const float div)
+t_vect3d	vec3_div(const t_vect3d v3a, const double div)
 {
 	t_vect3d	r;
 
